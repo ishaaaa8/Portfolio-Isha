@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fonts */
+.cursive {
+    font-family: "Cedarville Cursive", cursive;
+}
+
+/* Gradient Text Effect */
+.Welcome-text {
+    background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        linear-gradient(90deg, #e59cff 0%, #ba9cff 50%, #9cb2ff 100%);
+    background-blend-mode: normal, screen;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Blurred Box with Shadow */
+.Welcome-box {
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: max-content;
+    border-radius: 32px;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(
+        145deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(50, 50, 50, 0.7) 100%
+    );
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.2);
+    transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
+}
+
+.Welcome-box:hover {
+    box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.4);
+}
+
+/* Buttons */
+.button-primary {
+    background: linear-gradient(
+            180deg,
+            rgba(60, 8, 126, 0) 0%,
+            rgba(60, 8, 126, 0.32) 100%
+        ),
+        rgba(113, 47, 255, 0.12);
+    box-shadow: inset 0 0 12px #bf97ff3d;
+    color: white;
+    border-radius: 24px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-primary:hover {
+    background: linear-gradient(
+            180deg,
+            rgba(60, 8, 126, 0) 0%,
+            rgba(60, 8, 126, 0.42) 100%
+        ),
+        rgba(113, 47, 255, 0.24);
+    box-shadow: inset 0 0 12px #bf97ff70;
+    transform: scale(1.05);
+}
+
+/* Scrollbar */
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+/* Background Video Styling */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    opacity: 0.95;
+}
+
+/* Background Section */
+body {
+    background: linear-gradient(
+        145deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(40, 40, 40, 1) 100%
+    );
+    color: white;
+    font-family: "Cedarville Cursive", cursive;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
