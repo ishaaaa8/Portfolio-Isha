@@ -26,7 +26,7 @@ const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w--[600px] w-auto h-auto'
+                    className='flex flex-col gap-6 mt-6 text-8xl font-bold text-white max-w--[600px] w-auto h-auto'
                 >
                     <span>
                         Isha Singh
@@ -38,7 +38,7 @@ const HeroContent = () => {
                 </motion.div>
                 <motion.p
                     variants={slideInFromLeft(0.8)}
-                    className='text-lg text-gray-300 my-5 max-w-[600px]'
+                    className='text-3xl text-gray-300 my-5 max-w-[600px]'
                 >
                     I&apos;m a Full Stack Software Engineer with experience in Website.
                     Mobile, and Software development. Check out my projects and skills.

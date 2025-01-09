@@ -553,6 +553,9 @@ video {
 .w-full{
   width: 100%;
 }
+.w-3\/5{
+  width: 60%;
+}
 .min-w-\[200px\]{
   min-width: 200px;
 }
@@ -607,6 +610,9 @@ video {
 }
 .justify-around{
   justify-content: space-around;
+}
+.justify-items-center{
+  justify-items: center;
 }
 .gap-10{
   gap: 2.5rem;
@@ -766,6 +772,10 @@ video {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -809,6 +819,22 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold{
   font-weight: 700;
@@ -1021,6 +1047,9 @@ body {
 @media (min-width: 1024px){
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

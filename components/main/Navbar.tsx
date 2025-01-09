@@ -37,18 +37,22 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex flex-row gap-5'>
-                    {Socials.map((social) => (
-                        <a href={social.link} target="_blank" rel="noopener noreferrer">
+                    {Socials.map((social, index) => (
+                    <a 
+                        key={index} // Add key prop here
+                        href={social.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
                         <Image
                             src={social.src}
                             alt={social.name}
-                            key={social.name}
                             width={24}
                             height={24}
                             className="hover:opacity-80"
                         />
                     </a>
-                    ))}
+                ))}
                 </div>
             </div>
         </div>
